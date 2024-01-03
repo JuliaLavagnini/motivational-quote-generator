@@ -1,22 +1,95 @@
-body{
-    background-color: #FCFAF2;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: #fcfaf2;
+  font-family: 'Rubik', sans-serif;
 }
 
-.container{
-    margin: 120px auto;
-    max-width: 600px;
+.container {
+  margin: 120px auto;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #fcfaf2;
+  box-shadow: 0px 20px 60px rgba(1, 1, 1, 0.082);
+  color: #1E1E1E;
 }
 
-h1{
-    text-align: center;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 1.5;
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+}
+h6,
+p {
+  text-align: center;
 }
 
-form{
-    padding: 30px;
-    background-color: aliceblue;
-    border-radius: 30px;
-    display: flex;
+.btns {
+  padding: 14px 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 50px;
+  padding: 8px 24px;
+  margin-top: 10px;
+  border: none;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.color1 {
+  background-color: #ffcf00;
+}
+.color2 {
+  background-color: #efb4d4;
+}
+.color3 {
+  background-color: #3fcb80;
+}
+
+form {
+  padding: 30px;
+  background-color: #fcfaf2;
+  box-shadow: 0px 20px 60px rgba(1, 1, 1, 0.082);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.user_input {
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #ffcf00;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit-btn {
+  margin-left: 10px;
+  padding: 14px 24px;
+  border-radius: 50px;
+  background: #1E1E1E;
+  font-size: 16px;
+  color: #ffff;
+  border: none;
+  width: 150px;
+}
+
+#quoteGenerated {
+  font-size: 14px;
+  padding: 20px;
+  line-height: 20px;
+  background-color: #fcfaf2;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  box-shadow: 0px 20px 60px rgba(1, 1, 1, 0.082);
+  border-radius: 10px;
 }
