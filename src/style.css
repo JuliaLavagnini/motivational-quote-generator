@@ -1,4 +1,22 @@
-.container {
-  margin: 120px auto;
-  max-width: 600px;
+body{
+    background-color: #FCFAF2;
+}
+
+.container{
+    margin: 120px auto;
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+form{
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    display: flex;
 }

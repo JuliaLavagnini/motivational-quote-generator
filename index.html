@@ -13,30 +13,33 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Motivation Generator</title>
   </head>
   <body>
-    <h1>Stay Motivated</h1>
-    <main>
-      <p>
-        Get a daily dose of motivation to inspire your day.
-      </p>
-      <h3>Choose a category</h3>
+    <div class="container">
+      <h1>Stay Motivated</h1>
+      <main>
+        <p>
+          Get a daily dose of motivation to inspire your
+          day.
+        </p>
+        <h3>Choose a category</h3>
 
-      <form>
-        <input
-          type="text"
-          placeholder="Or enter the category"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+        <form>
+          <input
+            type="text"
+            placeholder="Or enter the category"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" />
+        </form>
 
-      <div id="quoteGenerated"></div>
-    </main>
+        <div id="quoteGenerated">the quote goes here</div>
+      </main>
+    </div>
     <script src="src/main.js"></script>
   </body>
 </html>
