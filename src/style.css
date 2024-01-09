@@ -36,10 +36,11 @@ button {
   padding: 8px 24px;
   margin-top: 10px;
   border: none;
+  transition: opacity 0.3s ease;
 }
 
 button:hover{
-    opacity: 0.8;
+  opacity: 0.7;
 }
 
 .color1 {
@@ -78,7 +79,7 @@ form {
   border-radius: 50px;
   background: #1E1E1E;
   font-size: 16px;
-  color: #ffff;
+  color: #fcfaf2;
   border: none;
   width: 150px;
 }
