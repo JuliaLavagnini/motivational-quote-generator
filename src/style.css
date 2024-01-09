@@ -126,3 +126,14 @@ form {
 .blinking-text {
   animation: blink 2s infinite;
 }
+
+footer {
+  font-size: 12px;
+  margin-top: 50px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+a {
+  color: #ffcf00;
+}
