@@ -16,7 +16,7 @@ function generateQuote(category) {
 
   // Context for the quote generation, providing additional information
   let context =
-    "Your friend needs a motivation to feel better. Your mission is to create a 2 lines motivational quote in basic HTML. Make sure to follow the user instructions. Sign the quote with 'Stay Motivated ❤️' inside a <strong> element at the end of the quote and NOT at the beginning. The quote should use lighter font-weight and the sign. Everything should align to the left. Keep font size of the quote text in 18 pixels on every new quote generated.";
+    "Your friend needs a motivation to feel better. Your mission is to create a 2 lines motivational quote in basic HTML. Make sure to follow the user instructions. Sign the quote with '- Stay Motivated ❤️' inside a <strong> element at the end of the quote and NOT at the beginning. The quote should use lighter font-weight and the sign. Everything should align to the left. Keep font size of the quote text in 18 pixels on every new quote generated.";
 
   // Prompt for the quote generation, including the user's category
   let prompt = `User instruction: Write a motivational quote about ${category}`;
@@ -24,20 +24,20 @@ function generateQuote(category) {
   // URL for making the API request
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
+  const quoteElement = document.querySelector(
+    "#quoteGenerated"
+  );
+  quoteElement.classList.remove("hidden");
+  // Set the initial text content and add blink affect to it
+  quoteElement.innerHTML =
+    '<div class="blinking-text">To get your day better... ❤️ </div>';
+
   console.log("generating quote");
   console.log(`${prompt}`);
   console.log(`${context}`);
 
-   const quoteElement = document.querySelector(
-   "#quoteGenerated"
-   );
-   quoteElement.classList.remove('hidden');
-   // Set the initial text content and add blink affect to it
-   quoteElement.innerHTML =
-     '<div class="blinking-text">Generating the quote to make your day better ❤️ </div>';
-
-   // Making the API request and displaying the quote
-   axios.get(url).then(showQuote);
+  // Making the API request and displaying the quote
+  axios.get(url).then(showQuote);
 }
 
 // Selecting the quote form element

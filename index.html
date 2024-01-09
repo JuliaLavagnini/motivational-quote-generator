@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <!-- External script dependencies (Typewriter and Axios) -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- Bootstrap CSS stylesheet -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Custom CSS stylesheet -->
     <link rel="stylesheet" href="src/style.css" />
+    <!-- Title of the web page -->
     <title>Motivation Generator</title>
   </head>
   <body>
+    <!-- Main container div -->
     <div class="container">
+      <!-- Header section with the main title -->
       <h1>Stay Motivated</h1>
+      <!-- Main content section -->
       <main>
+        <!-- Introduction paragraph -->
         <p>
           Get a daily dose of motivation to inspire your
           day.
         </p>
+        <!-- Category selection buttons -->
         <h4>Choose a category</h4>
         <div class="btns">
+          <!-- Buttons for different categories with data-value attribute -->
           <button class="color3 category-btn" data-value="study">study</button>
           <button class="color2 category-btn" data-value="relationship">relationship</button>
           <button class="color3 category-btn" data-value="family">family</button>
@@ -40,9 +51,12 @@
           <button class="color1 category-btn" data-value="love">love</button>
           <button class="color2 category-btn" data-value="success">success</button>
         </div>
+        <!-- Instruction for typing own category -->
         <h6>Or type your own</h6>
+        <!-- Form for user input -->
         <div class="form-container">
           <form id="quoteGeneratorForm">
+            <!-- Input field for typing own category -->
             <input
               type="text"
               placeholder="Enter the category"
@@ -52,14 +66,19 @@
               class="user_input"
               id="userPrompt"
             />
+            <!-- Submit button for form -->
             <input type="submit" class="submit-btn" />
           </form>
-          <div class="hint">i.e: Excercise, Sad or Books</div>
+          <!-- Hint for user input -->
+          <div class="hint">
+            i.e: Excercise, Sad or Books
+          </div>
         </div>
-
+        <!-- Generated quote container initially hidden -->
         <div id="quoteGenerated" class="hidden"></div>
       </main>
     </div>
+    <!-- Main JavaScript file -->
     <script src="src/main.js"></script>
   </body>
 </html>
