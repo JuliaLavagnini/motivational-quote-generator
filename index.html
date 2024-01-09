@@ -41,20 +41,23 @@
           <button class="color2 category-btn" data-value="success">success</button>
         </div>
         <h6>Or type your own</h6>
-        <form id="quoteGeneratorForm">
-          <input
-            type="text"
-            placeholder="Enter the category"
-            autofocus
-            required
-            autocomplete="off"
-            class="user_input"
-            id="userPrompt"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
+        <div class="form-container">
+          <form id="quoteGeneratorForm">
+            <input
+              type="text"
+              placeholder="Enter the category"
+              autofocus
+              required
+              autocomplete="off"
+              class="user_input"
+              id="userPrompt"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <div class="hint">i.e: Excercise, Sad or Books</div>
+        </div>
 
-        <div id="quoteGenerated"></div>
+        <div id="quoteGenerated" class="hidden"></div>
       </main>
     </div>
     <script src="src/main.js"></script>

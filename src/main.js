@@ -28,8 +28,16 @@ function generateQuote(category) {
   console.log(`${prompt}`);
   console.log(`${context}`);
 
-  // Making the API request and displaying the quote
-  axios.get(url).then(showQuote);
+   const quoteElement = document.querySelector(
+   "#quoteGenerated"
+   );
+   quoteElement.classList.remove('hidden');
+   // Set the initial text content and add blink affect to it
+   quoteElement.innerHTML =
+     '<div class="blinking-text">Generating the quote to make your day better ❤️ </div>';
+
+   // Making the API request and displaying the quote
+   axios.get(url).then(showQuote);
 }
 
 // Selecting the quote form element
